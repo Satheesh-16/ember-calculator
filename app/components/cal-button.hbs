@@ -1,0 +1,10 @@
+
+<div id="calci">
+            <Input @value={{this.total}} id="display" disabled/>
+        <hr>
+        <div id="inp-but">
+            {{#each  this.model as |val|}}
+                <button type="button" {{on "click" (fn this.nice val)}}>{{val}}</button>
+            {{/each}}
+        </div>
+    </div>

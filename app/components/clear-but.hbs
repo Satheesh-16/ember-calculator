@@ -1,0 +1,8 @@
+<button type="button" {{on "click" this.clear}}>Clear History</button>
+
+<button type="button" {{on "click" this.load}}>Refresh</button>
+
+
+{{#each this.equa as |cal|}}
+    <p>{{cal.total}} ==> {{cal.result}}</p>
+{{/each}}
