@@ -1,6 +1,14 @@
 <MainBody @nonhis={{true}}>
     <div class="history">
     <h3>The history for the present session</h3>
-    <ClearBut/>
+    <Clear/>
+    <div id="ans">
+
+    {{#each this.mo as |cal|}}
+        <p>{{cal.total}} ==> {{cal.result}}</p>
+    {{/each}}
+    
+    {{this.welcome}}
+    </div>
 </div>
 </MainBody>
