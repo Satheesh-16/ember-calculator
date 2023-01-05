@@ -4,11 +4,11 @@
     <Clear/>
     <div id="ans">
 
-    {{#each this.mo as |cal|}}
+    {{#each @model as |cal|}}
         <p>{{cal.total}} ==> {{cal.result}}</p>
     {{/each}}
-    
-    {{this.welcome}}
     </div>
+
+    <button type="button" {{on "click" this.demo}}>click me to alert</button>
 </div>
 </MainBody>
