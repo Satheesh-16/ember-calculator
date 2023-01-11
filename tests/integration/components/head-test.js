@@ -1,26 +1,30 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-calculator/tests/helpers';
-import { render } from '@ember/test-helpers';
+import { click, render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
+import { visit, currentURL } from '@ember/test-helpers';
 
 module('Integration | Component | head', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
-    await render(hbs`<Head />`);
-
-    assert.dom(this.element).hasText('');
-
-    // Template block usage:
+  test('checking the element present in history page', async function (assert) {
     await render(hbs`
       <Head>
-        template block text
       </Head>
     `);
 
-    assert.dom(this.element).hasText('template block text');
+    assert.dom(this.element).hasText('Calculator History');
+  });
+
+  test('checking rendering in head', async function (assert) {
+    assert.expect(2);
+    await render(hbs`<Head/>`);
+
+    await click('.nav-hist');
+    assert.equal(currentURL(), '/calci/historydisplay');
+
+    await click('.startingpage');
+    this.pauseTest();
+    assert.strictEqual(currentURL(), '/');
   });
 });

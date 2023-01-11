@@ -10,4 +10,5 @@ Router.map(function () {
   this.route('calci', function () {
     this.route('historydisplay');
   });
+  this.route('form');
 });

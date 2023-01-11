@@ -1,14 +1,13 @@
 <MainBody @nonhis={{true}}>
     <div class="history">
+    <button type="button" {{on "click" this.greet}}>Greet me</button>
+    <button type="button" {{on "click" this.transs}} class="startingpage">Click me for starting page</button>
+
     <h3>The history for the present session</h3>
-    <Clear/>
-    <div id="ans">
+    
+    <Clear @model={{@model}}/>
 
-    {{#each @model as |cal|}}
-        <p>{{cal.total}} ==> {{cal.result}}</p>
-    {{/each}}
-    </div>
 
-    <button type="button" {{on "click" this.demo}}>click me to alert</button>
+
 </div>
 </MainBody>
