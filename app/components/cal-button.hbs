@@ -1,0 +1,12 @@
+
+<div id="calci">
+        <Input @value={{this.total}} id="display" @type="text"/>
+    <hr>
+    <div id="inp-but">
+        {{#each  this.model as |val|}}
+            <button type="button" {{on "click" (fn this.displayer val)}}>{{val}}</button>
+        {{/each}}
+        <button type="button" {{on "click" this.backup}}>Q</button>
+        <button type="button" {{on "click" (fn this.calculate this.total)}}>=</button>
+    </div>
+</div>

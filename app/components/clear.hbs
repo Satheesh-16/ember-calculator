@@ -1,0 +1,10 @@
+<div id="ans">
+    {{#each @model as |cal|}}
+        <p>{{cal.total}} ==> {{cal.result}}</p>
+    {{/each}}
+</div>
+
+<button type="button" {{on "click" this.clear}} class="clearhist">Clear History</button>
+<button type="button" {{on "click" this.refresh}} id="but-on">refresh</button>
+
+{{this.value}}
