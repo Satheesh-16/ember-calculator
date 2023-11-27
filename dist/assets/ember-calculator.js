@@ -270,7 +270,7 @@
   const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
   /*
     <div id="head">
-      <a href="https://zoho.com/"><img src="/Images/zoho-img.png" alt="zoho link" width="70" height="30"></a>
+      <a href="https://zoho.com/"><img src="{{this.rootURL}}Images/zoho-img.png" alt="zoho link" width="70" height="30"></a>
       <h2><LinkTo @route="index">Calculator</LinkTo></h2>
       <div id="head-right">
       <h4><LinkTo @route="calci.historydisplay" class="nav-hist">History</LinkTo></h4>
@@ -278,8 +278,8 @@
   </div>
   */
   {
-    "id": "yq2d9ohS",
-    "block": "[[[10,0],[14,1,\"head\"],[12],[1,\"\\n    \"],[10,3],[14,6,\"https://zoho.com/\"],[12],[10,\"img\"],[14,\"src\",\"/Images/zoho-img.png\"],[14,\"alt\",\"zoho link\"],[14,\"width\",\"70\"],[14,\"height\",\"30\"],[12],[13],[13],[1,\"\\n    \"],[10,\"h2\"],[12],[8,[39,0],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n    \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n    \"],[10,\"h4\"],[12],[8,[39,0],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci.historydisplay\"]],[[\"default\"],[[[[1,\"History\"]],[]]]]],[13],[1,\"\\n    \"],[13],[1,\"\\n\"],[13]],[],false,[\"link-to\"]]",
+    "id": "GWUG4ieT",
+    "block": "[[[10,0],[14,1,\"head\"],[12],[1,\"\\n    \"],[10,3],[14,6,\"https://zoho.com/\"],[12],[10,\"img\"],[15,\"src\",[29,[[30,0,[\"rootURL\"]],\"Images/zoho-img.png\"]]],[14,\"alt\",\"zoho link\"],[14,\"width\",\"70\"],[14,\"height\",\"30\"],[12],[13],[13],[1,\"\\n    \"],[10,\"h2\"],[12],[8,[39,0],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n    \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n    \"],[10,\"h4\"],[12],[8,[39,0],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci.historydisplay\"]],[[\"default\"],[[[[1,\"History\"]],[]]]]],[13],[1,\"\\n    \"],[13],[1,\"\\n\"],[13]],[],false,[\"link-to\"]]",
     "moduleName": "ember-calculator/components/head.hbs",
     "isStrictMode": false
   });
@@ -299,7 +299,7 @@
     <div class="main-body">
       {{#if this.nonhis}}
           <div id="head">
-              <a href="https://www.calculator.net/"><img src="/Images/logo.png" alt="zoho link" width="80" height="40"></a>
+              <a href="https://www.calculator.net/"><img src="{{this.rootURL}}Images/logo.png" alt="zoho link" width="80" height="40"></a>
               <h2><LinkTo @route="index">Calculator</LinkTo></h2>
               <div id="head-right">
                   <h4><LinkTo @route="calci" class="nav-hist">Go Back</LinkTo></h4>
@@ -307,7 +307,7 @@
           </div>
       {{else}}
           <div id="head">
-              <a href="https://www.calculator.net/"><img src="/Images/logo.png" alt="zoho link" width="80" height="40"></a>
+              <a href="https://www.calculator.net/"><img src="{{this.rootURL}}Images/logo.png" alt="zoho link" width="80" height="40"></a>
               <h2><LinkTo @route="index">Calculator</LinkTo></h2>
               <div id="head-right">
                   <h4><LinkTo @route="calci.historydisplay" class="nav-hist">History</LinkTo></h4>
@@ -318,8 +318,8 @@
   </div>
   */
   {
-    "id": "NK4o3CVE",
-    "block": "[[[10,0],[14,0,\"main-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"nonhis\"]],[[[1,\"        \"],[10,0],[14,1,\"head\"],[12],[1,\"\\n            \"],[10,3],[14,6,\"https://www.calculator.net/\"],[12],[10,\"img\"],[14,\"src\",\"/Images/logo.png\"],[14,\"alt\",\"zoho link\"],[14,\"width\",\"80\"],[14,\"height\",\"40\"],[12],[13],[13],[1,\"\\n            \"],[10,\"h2\"],[12],[8,[39,1],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n            \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n                \"],[10,\"h4\"],[12],[8,[39,1],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci\"]],[[\"default\"],[[[[1,\"Go Back\"]],[]]]]],[13],[1,\"\\n            \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],[[[1,\"        \"],[10,0],[14,1,\"head\"],[12],[1,\"\\n            \"],[10,3],[14,6,\"https://www.calculator.net/\"],[12],[10,\"img\"],[14,\"src\",\"/Images/logo.png\"],[14,\"alt\",\"zoho link\"],[14,\"width\",\"80\"],[14,\"height\",\"40\"],[12],[13],[13],[1,\"\\n            \"],[10,\"h2\"],[12],[8,[39,1],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n            \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n                \"],[10,\"h4\"],[12],[8,[39,1],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci.historydisplay\"]],[[\"default\"],[[[[1,\"History\"]],[]]]]],[13],[1,\"\\n            \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]]],[1,\"    \"],[18,1,null],[1,\"\\n\"],[13]],[\"&default\"],false,[\"if\",\"link-to\",\"yield\"]]",
+    "id": "QRV8BxRR",
+    "block": "[[[10,0],[14,0,\"main-body\"],[12],[1,\"\\n\"],[41,[30,0,[\"nonhis\"]],[[[1,\"        \"],[10,0],[14,1,\"head\"],[12],[1,\"\\n            \"],[10,3],[14,6,\"https://www.calculator.net/\"],[12],[10,\"img\"],[15,\"src\",[29,[[30,0,[\"rootURL\"]],\"Images/logo.png\"]]],[14,\"alt\",\"zoho link\"],[14,\"width\",\"80\"],[14,\"height\",\"40\"],[12],[13],[13],[1,\"\\n            \"],[10,\"h2\"],[12],[8,[39,1],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n            \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n                \"],[10,\"h4\"],[12],[8,[39,1],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci\"]],[[\"default\"],[[[[1,\"Go Back\"]],[]]]]],[13],[1,\"\\n            \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]],[[[1,\"        \"],[10,0],[14,1,\"head\"],[12],[1,\"\\n            \"],[10,3],[14,6,\"https://www.calculator.net/\"],[12],[10,\"img\"],[15,\"src\",[29,[[30,0,[\"rootURL\"]],\"Images/logo.png\"]]],[14,\"alt\",\"zoho link\"],[14,\"width\",\"80\"],[14,\"height\",\"40\"],[12],[13],[13],[1,\"\\n            \"],[10,\"h2\"],[12],[8,[39,1],null,[[\"@route\"],[\"index\"]],[[\"default\"],[[[[1,\"Calculator\"]],[]]]]],[13],[1,\"\\n            \"],[10,0],[14,1,\"head-right\"],[12],[1,\"\\n                \"],[10,\"h4\"],[12],[8,[39,1],[[24,0,\"nav-hist\"]],[[\"@route\"],[\"calci.historydisplay\"]],[[\"default\"],[[[[1,\"History\"]],[]]]]],[13],[1,\"\\n            \"],[13],[1,\"\\n        \"],[13],[1,\"\\n\"]],[]]],[1,\"    \"],[18,1,null],[1,\"\\n\"],[13]],[\"&default\"],false,[\"if\",\"link-to\",\"yield\"]]",
     "moduleName": "ember-calculator/components/main-body.hbs",
     "isStrictMode": false
   });
@@ -905,13 +905,13 @@
     <MainBody>
       <div id="main"><LinkTo @route="calci" class="start-link"> Start Calculating...</LinkTo></div>
       <div id="main-img">
-      <img src="/Images/calculators.png" alt="Calculator_image" height="400" id="home-image">
+      <img src="{{this.rootURL}}Images/calculators.png" alt="Calculator_image" height="400" id="home-image">
       </div>
   </MainBody>
   */
   {
-    "id": "VVTE+mXz",
-    "block": "[[[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n    \"],[10,0],[14,1,\"main\"],[12],[8,[39,1],[[24,0,\"start-link\"]],[[\"@route\"],[\"calci\"]],[[\"default\"],[[[[1,\" Start Calculating...\"]],[]]]]],[13],[1,\"\\n    \"],[10,0],[14,1,\"main-img\"],[12],[1,\"\\n    \"],[10,\"img\"],[14,\"src\",\"/Images/calculators.png\"],[14,\"alt\",\"Calculator_image\"],[14,\"height\",\"400\"],[14,1,\"home-image\"],[12],[13],[1,\"\\n    \"],[13],[1,\"\\n\"]],[]]]]]],[],false,[\"main-body\",\"link-to\"]]",
+    "id": "AwWsOWG7",
+    "block": "[[[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n    \"],[10,0],[14,1,\"main\"],[12],[8,[39,1],[[24,0,\"start-link\"]],[[\"@route\"],[\"calci\"]],[[\"default\"],[[[[1,\" Start Calculating...\"]],[]]]]],[13],[1,\"\\n    \"],[10,0],[14,1,\"main-img\"],[12],[1,\"\\n    \"],[10,\"img\"],[15,\"src\",[29,[[30,0,[\"rootURL\"]],\"Images/calculators.png\"]]],[14,\"alt\",\"Calculator_image\"],[14,\"height\",\"400\"],[14,1,\"home-image\"],[12],[13],[1,\"\\n    \"],[13],[1,\"\\n\"]],[]]]]]],[],false,[\"main-body\",\"link-to\"]]",
     "moduleName": "ember-calculator/templates/index.hbs",
     "isStrictMode": false
   });
@@ -996,7 +996,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-calculator/app")["default"].create({"name":"ember-calculator","version":"0.0.0+3e03a637"});
+            require("ember-calculator/app")["default"].create({"name":"ember-calculator","version":"0.0.0+42e783aa"});
           }
         
 //# sourceMappingURL=ember-calculator.map
