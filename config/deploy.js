@@ -24,8 +24,8 @@ module.exports = function(deployTarget) {
   }
 
   if (deployTarget === 'production') {
-    ENV.rootURL = '/ember-calculator';
     ENV.locationType = 'hash';
+    ENV.build.environment = 'production';
   }
 
   // Note: if you need to build some configuration asynchronously, you can return
