@@ -25,7 +25,6 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'production') {
     ENV.locationType = 'hash';
-    ENV.build.environment = 'production';
   }
 
   // Note: if you need to build some configuration asynchronously, you can return
