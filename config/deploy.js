@@ -9,7 +9,6 @@ module.exports = function(deployTarget) {
   ENV.git = {
     repo: 'https://github.com/Satheesh-16/ember-calculator.git',
     branch: 'gh-pages',
-    worktreePath: '/tmp/ef4-deploy',
     commitMessage: 'Deployed %@'
   };
 
